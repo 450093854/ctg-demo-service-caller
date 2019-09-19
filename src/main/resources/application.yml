@@ -2,7 +2,7 @@ server:
   port: 8080
 
 helloservice:
-  url: http://localhost:8081/hello
+  url: http://${helloservice.addr:localhost}:8081/hello
 
 byeservice:
-  url: http://localhost:8082/bye
+  url: http://${byeservice.addr:localhost}:8082/bye
